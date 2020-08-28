@@ -1,0 +1,659 @@
+@media screen and (min-width: 321px) and (max-width: 768px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    @font-face {
+        font-family: "Rajdhani";
+        src: url(../fonts/Rajdhani-Bold.ttf);
+    }
+
+    @font-face {
+        font-family: "Rajdhani-Medium";
+        src: url(../fonts/Rajdhani-Medium.ttf);
+    }
+
+    @font-face {
+        font-family: "Rajdhani-Regular";
+        src: url(../fonts/Rajdhani-Regular.ttf);
+    }
+    @font-face {
+        font-family: "Rajdhani-SemiBold";
+        src: url(../fonts/Rajdhani-SemiBold.ttf);
+    }
+    @font-face {
+        font-family: "Courier New";
+        src: url(../fonts/cour.ttf);
+    }
+
+    #header_all {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #header {
+        background-color: black;
+        width: 100%;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #menu {
+        height: 35px;
+        width: 30px;
+        margin: 0 73px 0 10px;
+        display: flex;
+    }
+
+    #menu img {
+        display: block;
+    }
+
+    #logo {
+        font: 30px "Rajdhani";
+        color: rgb(255, 255, 255);
+        text-align: center;
+        width: 225px;
+        height: 33px;
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    #login__carrinho {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 110px;
+    }
+
+    #login a {
+        font: 24px "Rajdhani-Medium";
+        color: white;
+        text-decoration: none;
+    }
+
+    #carrinho {
+        display: inline-block;
+        float: right;
+        margin: 0 10px 0 0;
+    }
+
+    #carrinho__icon__num {
+        position: absolute;
+        margin: -31px 0 0 -7px;
+    }
+
+    #number_of_items {
+        position: absolute;
+        margin: -28px 0 0 -3px;
+        font: 14px Rajdhani;
+    }
+
+    #menu__hidden {
+        background-color: white;
+        position: absolute;
+        border: 1px solid black;
+        z-index: 30;
+        width: 272px;
+        margin-top: -39px;
+        display: none;
+    }
+
+    #menu__span {
+        background-color: black;
+        color: white;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    #menu__span span {
+        margin-left: 30px;
+        font: 19px Rajdhani-Medium;
+    }
+
+    #menu__search {
+        height: 45px;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        background-color: rgb(177 177 177);
+    }
+
+    #menu__search input {
+        height: 34px;
+        width: 204px;
+        margin: 0 0 0 15px;
+        font: 14px Rajdhani-Medium;
+        border: none;
+        text-indent: 14px;
+    }
+
+    #menu__search button {
+        border: none;
+        height: 34px;
+    }
+
+    .menu__section {
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid rgb(177 177 177);
+        font: 19px Rajdhani-Medium;
+    }
+
+    .menu__section--inner {
+        text-indent: 28px;
+    }
+
+    .subbutton {
+        height: 40px;
+        width: 45px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+    }
+
+    #subbuttonMines {
+        position: absolute;
+        left: 227px;
+        display: none;
+    }
+
+    #submenu {
+        display: none;
+    }
+
+    .submenu__section {
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid rgb(177 177 177);
+        background-color: black;
+        color: white;
+    }
+
+    .sub__categoria {
+        text-indent: 40px;
+        font: 19px Rajdhani-Medium;
+    }
+
+    .submenu__section--direction {
+        width: 25px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu__section--social {
+        height: 40px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .menu__section--social a {
+        width: 34px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+    }
+
+    #overlay {
+        width: 768px;
+        height: 2463px;
+        position: absolute;
+        background-color: white;
+        opacity: 0.5;
+        z-index: 20;
+        display: none;
+    }
+
+    #overlay2 {
+        width: 768px;
+        height: 2463px;
+        position: absolute;
+        background-color: white;
+        opacity: 0.5;
+        z-index: 20;
+        display: none;
+    }
+
+    #beneficios {
+        background-color: rgb(197 197 197);
+        font: 12px "Rajdhani-Medium";
+        color: white;
+        text-align: center;
+        height: 15px;
+    }
+
+    #image__slider {
+        background-image: url("../img/slider__tablet.png");
+        height: 457px;
+    }
+
+    #slider {
+        height: 457px;
+    }
+
+    #text_in_slider {
+        position: absolute;
+        text-align: center;
+        margin: -280px 0 0 44px;
+        font-family: Rajdhani-Medium;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #CF {
+        font-size: 25px;
+    }
+
+    #sport {
+        font-family: "Courier New";
+        font-size: 15px;
+        letter-spacing: 1px;
+        line-height: 35px;
+    }
+
+    #line_under_c {
+        border: 0.5px solid black;
+        width: 210px;
+    }
+
+    #text_in_slider input {
+        display: block;
+        margin: 10px 0 0 -16px;
+        width: 85px;
+        height: 22px;
+        border: solid 2px;
+        background-color: rgb(248 247 243);
+    }
+
+    #slider__buttons {
+        text-align: center;
+        margin: -35px 0 0 0;
+    }
+
+    input[type="radio"] {
+        display: none;
+    }
+
+    .white {
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        border: 1px solid rgb(154 153 151);
+        background-color: white;
+    }
+
+    input[type="radio"]:checked + label {
+        background-color: black;
+    }
+
+    .produtors {
+        height: 30px;
+        text-align: center;
+    }
+
+    .produtors__conteiner {
+        margin: 26px 0;
+    }
+
+    .productors__left {
+        opacity: 0.2;
+        width: 60px;
+        height: 14px;
+    }
+
+    .productors__text {
+        font: 22px "Rajdhani-Regular";
+    }
+
+    .productors__right {
+        opacity: 0.2;
+        width: 60px;
+        height: 14px;
+    }
+
+    .img__opacity, .img__opacity1 {
+        display: none;
+    }
+
+    #carusel {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .sale {
+        height: 290px;
+        margin: -14px 0 0 0;
+    }
+
+    #arrows {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 768px;
+    }
+
+    .arrow__shadow {
+        width: 40px;
+        height: 276px;
+        background-color: rgb(244 244 244);
+        margin-top: -277px;
+        opacity: 0.7;
+        text-align: center;
+    }
+
+    .arrow__shadow2 {
+        width: 40px;
+        height: 276px;
+        margin-top: -277px;
+        opacity: 0.7;
+        text-align: center;
+    }
+
+    .arrow__shadow img, .arrow__shadow2 img {
+        margin-top: 129px;
+    }
+
+    #old__price--section, #new__price--section {
+        text-align: center;
+        display: inline-block;
+    }
+
+    .old__price {
+        font: 17px Rajdhani-SemiBold;
+        color: rgb(136 136 136);
+        display: inline-block;
+        margin: 10px 52px 0 52px;
+    }
+
+    .new__price {
+        font: 18px Rajdhani-SemiBold;
+        display: inline-block;
+        margin: 0 44px 0 47px;
+    }
+
+    #old__price--one {
+        margin: 0 52px 0 98px;
+        color: black;
+    }
+
+    #new__price--one {
+        margin: 0 42px 0 86px;
+    }
+
+    #old__price--two, #old__price--four {
+        text-decoration: line-through;
+    }
+
+    #old__price--three {
+        color: black;
+    }
+
+    #old__price--five, #old__price--six, #close {
+        display: none;
+    }
+
+    #icon {
+        text-align: center;
+        margin: 15px 17px 20px 0;
+    }
+
+    .range {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .range__flex {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 15px;
+    }
+
+    #range__one {
+        background-image: url("../img/range_one-tablet.png");
+        width: 355px;
+        height: 265px;
+    }
+
+    #range__two {
+        background-image: url("../img/range_two-tablet.png");
+        width: 360px;
+        height: 265px;
+    }
+
+    #range__three {
+        background-image: url("../img/range_tree-tablet.png");
+        width: 465px;
+        height: 265px;
+    }
+
+    #range__four {
+        background-image: url("../img/range_four-tablet.png");
+        width: 250px;
+        height: 265px;
+    }
+
+    #range__five {
+        background-image: url("../img/range_five-tablet.png");
+        width: 265px;
+        height: 265px;
+    }
+
+    #range__six {
+        background-image: url("../img/range_six-tablet.png");
+        width: 450px;
+        height: 265px;
+    }
+
+    .range__span {
+        position: absolute;
+        font: 22px Rajdhani-SemiBold;
+        color: white;
+        text-shadow: 0 3px 0 black;
+    }
+
+    #for__instagram {
+        text-align: center;
+        margin: 30px 0 20px 0;
+    }
+
+    #margin__for__insta {
+        margin: 0 10px;
+    }
+
+    #galeria__instagram, #quem {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #insta {
+        background-image: url("../img/insta-tablet.png");
+        height: 134px;
+        width: 133px;
+    }
+
+    #insta__three {
+        background-image: url("../img/insta__one-tablet.png");
+        height: 134px;
+        width: 133px;
+    }
+
+    #insta__four {
+        height: 134px;
+        width: 133px;
+        background-image: url("../img/insta__two-tablet.png");
+    }
+
+    #insta__five {
+        background-image: url("../img/insta__three-tablet.png");
+        height: 134px;
+        width: 133px;
+    }
+
+    #insta__six {
+        background-image: url("../img/insta__four-tablet.png");
+        height: 134px;
+        width: 133px;
+    }
+
+    #insta__one, #insta__two {
+        height: 133px;
+    }
+
+    #quem__one, #quem__two {
+        height: 169px;
+    }
+
+    #margin__for__quem {
+        margin: 0 20px;
+    }
+
+    #for__quem {
+        text-align: center;
+    }
+
+    #quem__mid {
+        background-image: url("../img/quem__one-tablet.png");
+        height: 168px;
+        width: 167px;
+    }
+
+    #quem__three {
+        background-image: url("../img/quem__two-tablet.png");
+        height: 168px;
+        width: 167px;
+    }
+
+    #quem__four {
+        background-image: url("../img/quem__three-tablet.png");
+        height: 168px;
+        width: 167px;
+    }
+
+    #quem__five {
+        background-image: url("../img/quem__four-tablet.png");
+        height: 168px;
+        width: 167px;
+    }
+
+    #buttons {
+        margin: 55px 0 45px 0;
+    }
+
+    #buttons__article {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #newsletter {
+        color: white;
+        background: url("../img/button.png") 0 no-repeat;
+        width: 131px;
+        height: 30px;
+        border: none;
+        font: 15px Rajdhani-SemiBold;
+    }
+
+    #nome {
+        width: 221px;
+        height: 30px;
+        font: 15px Rajdhani-SemiBold;
+    }
+
+    #email__button {
+        width: 221px;
+        height: 30px;
+        font: 15px Rajdhani-SemiBold;
+    }
+
+    #cadastar {
+        width: 127px;
+        height: 30px;
+        font: 15px Rajdhani-SemiBold;
+        background-color: rgb(208 208 208);
+        color: white;
+        box-shadow: 4px 4px 0 rgb(79 80 82);
+    }
+
+    .footer__buttons {
+        font: 22px Rajdhani-Regular;
+        color: black;
+        background-color: white;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+        border: 1px solid rgb(208 208 208);
+    }
+
+    #footer__tablet {
+        font: 15px Rajdhani-Regular;
+        height: 37px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: black;
+    }
+
+    #footer__links {
+        width: 515px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    #footer__links div a {
+        color: white;
+        text-decoration: none;
+    }
+
+    #footer__social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 95px;
+    }
+
+    #carrinho__hidden, #overlay2, #insta__likes, #author {
+        display: none !important;
+    }
+
+    #enext {
+        text-align: center;
+        background-color: rgb(241 241 241);
+        height: 40px;
+        display: none;
+    }
+
+    #enext img {
+        margin-top: 5px;
+    }
+}

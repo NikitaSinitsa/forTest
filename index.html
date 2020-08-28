@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/mobyle.css">
+    <link rel="stylesheet" href="css/tablet.css">
+    <link rel="stylesheet" href="css/desctop.css">
+    <link rel="stylesheet" href="css/carricho.css">
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+<section id="overlay"></section>
+<section id="overlay2"></section>
+
+<header id="header_all">
+    <section id="header">
+        <a id="menu"><img src="img/Cloth_and_Fashion-MobileHome_menu.png" alt=""></a>
+        <a href="" id="logo">CLOTH & FASHION</a>
+        <div id="login__carrinho">
+            <article id="login">
+                <a href="#">LOGIN</a>
+            </article>
+
+            <div id="carrinho">
+                <img src="img/iconCarrinho.png" alt="">
+                <img src="img/iconItens.png" alt="" id="carrinho__icon__num">
+                <p id="number_of_items">88</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="tablet">
+        <section id="beneficios">
+            <p id="text_beneficios"><b>FRETE GRÁTIS</b> PARA COMPRAS ACIMA DE R$300,00</p>
+
+            <div id="top_radio">
+                <input type="radio" name="top" value="1" class="radio" id="top__radio1">
+                <label for="top__radio1" class="top__radio"> </label>
+                <input type="radio" name="top" value="2" checked class="radio" id="top__radio2">
+                <label for="top__radio2" class="top__radio"> </label>
+                <input type="radio" name="top" value="3" class="radio" id="top__radio3">
+                <label for="top__radio3" class="top__radio"> </label>
+            </div>
+        </section>
+
+        <section id="slider">
+            <div id="image__slider"></div>
+            <div id="text_in_slider">
+                <div id="CF">
+                    <span><b>C&F</b> CLOTHING</span>
+                </div>
+                <hr id="line_under_c">
+                <span id="sport">SPORTS & LIFESTYLE</span>
+                <input type="button" value="CONFIRA">
+            </div>
+            <article id="slider__buttons">
+                <input type="radio" name="slid" value="1" class="radio" id="first__button">
+                <label for="first__button" class="white"> </label>
+                <input type="radio" name="slid" value="2" class="radio" id="second__button">
+                <label for="second__button" class="white"> </label>
+                <input type="radio" name="slid" value="3" checked class="radio" id="third__button">
+                <label for="third__button" class="white"> </label>
+                <input type="radio" name="slid" value="4" class="radio" id="forth__button">
+                <label for="forth__button" class="white"> </label>
+                <input type="radio" name="slid" value="5" class="radio" id="fifth__button">
+                <label for="fifth__button" class="white"> </label>
+            </article>
+        </section>
+    </div>
+</header>
+<section id="menu__hidden">
+    <article id="menu__open">
+        <div id="menu__span">
+            <span>MENU</span>
+            <div id="close">X</div>
+        </div>
+        <div id="menu__search">
+            <input type="text" placeholder="O QUE ESTÁ PROCURANDO?">
+            <button><img src="img/search.png" alt=""></button>
+        </div>
+        <div id="menu__list">
+            <div class="menu__section">
+                <a class="menu__section--inner">SOBRE</a>
+                <a class="subbutton">+</a>
+            </div>
+            <div class="menu__section">
+                <a class="menu__section--inner">COLEÇÕES</a>
+                <a class="subbutton">+</a>
+            </div>
+            <div class="menu__section">
+                <a class="menu__section--inner">CATEGORIA</a>
+                <a class="subbutton" id="subbuttonPlass">+</a>
+                <a class="subbutton" id="subbuttonMines">-</a>
+            </div>
+            <div id="submenu">
+                <ul>
+                    <li class="submenu__section"><a class="sub__categoria">SUB CATEGORIA</a><a
+                            class="submenu__section--direction"> > </a></li>
+                    <li class="submenu__section"><a class="sub__categoria">SUB CATEGORIA</a><a
+                            class="submenu__section--direction"> > </a></li>
+                    <li class="submenu__section"><a class="sub__categoria">SUB CATEGORIA</a><a
+                            class="submenu__section--direction"> > </a></li>
+                    <li class="submenu__section"><a class="sub__categoria">SUB CATEGORIA</a><a
+                            class="submenu__section--direction"> > </a></li>
+                    <li class="submenu__section"><a class="sub__categoria">SUB CATEGORIA</a><a
+                            class="submenu__section--direction"> > </a></li>
+                </ul>
+            </div>
+            <div class="menu__section">
+                <a class="menu__section--inner">LOOKS</a>
+                <a class="subbutton">+</a>
+            </div>
+            <div class="menu__section">
+                <a class="menu__section--inner">CONTATO</a>
+                <a class="subbutton">+</a>
+            </div>
+            <div class="menu__section--social" id="menu__section--social">
+                <a><img src="img/facebook.png" alt=""></a>
+                <a><img src="img/twittwer.png" alt=""></a>
+                <a><img src="img/insta.png" alt=""></a>
+            </div>
+        </div>
+    </article>
+</section>
+<section id="carrinho__hidden">
+    <article id="carrinho__open">
+        <div id="carrinho__header">
+            <span>MEU CARRINHO</span>
+            <div id="carrinho__in">
+                <img src="img/iconCarrinho.png" alt="">
+                <img src="img/iconItens.png" alt="" id="carrinho__icon__in__num">
+                <p id="number_of__in_items">88</p>
+            </div>
+        </div>
+
+        <div id="carrinho__products">
+            <div class="carrinho__product">
+                <div class="carrinho__image"></div>
+
+                <div class="carrinho__descr">
+                    <div class="product__name">
+                        <span>Nome do Produto</span>
+                        <span class="close">X</span>
+                    </div>
+                    <div class="product__collor">
+                        <div class="color"></div>
+                    </div>
+                    <div class="number__price">
+                        <div class="number">
+                            <div class="mines">-</div>
+                            <input type="number">
+                            <div class="plus">+</div>
+                        </div>
+                        <div class="price">
+                            <span>R$88,88</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carrinho__product">
+                <div class="carrinho__image"></div>
+
+                <div class="carrinho__descr">
+                    <div class="product__name">
+                        <span>Nome do Produto</span>
+                        <span class="close">X</span>
+                    </div>
+                    <div class="product__collor">
+                        <div class="color"></div>
+                    </div>
+                    <div class="number__price">
+                        <div class="number">
+                            <div class="mines">-</div>
+                            <input type="number">
+                            <div class="plus">+</div>
+                        </div>
+                        <div class="price">
+                            <span>R$88,88</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="total">
+            <div id="total__price">
+                <span id="total__indent">TOTAL</span>
+                <span id="total__color" class="total_margin">R$88,88</span>
+            </div>
+            <div id="checkout__continuar">
+                <div id="continuar">
+                    <span>CONTINUAR COMPRANDO</span>
+                </div>
+                <div id="checkout">
+                    <span id="total_margin1" class="total_margin">CHECKOUT</span> <span id="total_margin2">  > </span>
+                </div>
+            </div>
+        </div>
+    </article>
+</section>
+<section id="main">
+    <article class="produtors">
+        <div class="produtors__conteiner">
+            <img src="img/left_tiengular.png" alt="" class="productors__left">
+            <span class="productors__text">PRODUTOS EM DESTAQUE</span>
+            <img src="img/right_tiengular.png" alt="" class="productors__right">
+        </div>
+    </article>
+
+    <article id="products">
+        <div id="carusel">
+            <img src="img/carusel_1.png" alt="" id="noDisplayinMobyle">
+            <img src="img/trowsers.png" alt="" class="img__opacity">
+            <img src="img/sale.png" alt="" class="img__opacity1">
+            <img src="img/trowsers3.png" alt="" class="img__opacity">
+            <img src="img/carusel_2.png" alt="" id="noDisplayinMobyle__one">
+            <img src="img/carusel_3.png" alt="" id="noDisplayinMobyle__two" class="sale">
+            <img src="img/carusel_4.png" alt="" id="noDisplayinMobyle__three">
+            <img src="img/carusel_5.png" alt="" id="noDisplayinMobyle__four" class="sale">
+            <img src="img/carusel_6.png" alt="" id="noDisplayinMobyle__five" class="sale">
+        </div>
+        <div id="carusel__pc">
+            <div class="carusel" id="carusel-pc_one"></div>
+            <div class="carusel" id="carusel-pc2"></div>
+
+            <div class="carusel" id="back">
+                <div class="carusel" id="right">
+                    <div class="carusel" id="front"></div>
+                </div>
+            </div>
+
+            <div class="carusel" id="carusel-pc4"></div>
+            <div class="carusel" id="carusel-pc5"></div>
+            <div class="carusel" id="carusel-pc6"></div>
+        </div>
+        <div id="arrows">
+            <div class="arrow__shadow">
+                <img src="img/arrow__left.png" alt="">
+            </div>
+            <div class="arrow__shadow2">
+                <img src="img/arrow__right.png" alt="">
+            </div>
+        </div>
+        <div id="old__price--section">
+            <div class="old__price" id="old__price--one">
+                <span>R$88,88</span>
+            </div>
+            <div class="old__price" id="old__price--two">
+                <span>R$88,88</span>
+            </div>
+            <div class="old__price" id="old__price--three">
+                <span>R$88,88</span>
+            </div>
+            <div class="old__price" id="old__price--four">
+                <span>R$88,88</span>
+            </div>
+            <div class="old__price" id="old__price--five">
+                <span>R$88,88</span>
+            </div>
+            <div class="old__price" id="old__price--six">
+                <span>R$88,88</span>
+            </div>
+        </div>
+        <div id="new__price--section">
+            <div class="new__price" id="new__price--one">
+                <span>2X R$44,44</span>
+            </div>
+            <div class="new__price">
+                <span>R$78,88</span>
+            </div>
+            <div class="new__price" id="new__price--three">
+                <span>2X R$44,44</span>
+            </div>
+            <div class="new__price" id="new__price--four">
+                <span>R$78,88</span>
+            </div>
+        </div>
+    </article>
+
+    <article id="icon">
+        <img src="img/icon.png" alt="">
+    </article>
+
+    <article id="range">
+        <div class="range__flex">
+            <div class="range">
+                <div id="range__one"></div>
+                <span class="range__span">JAQUETAS</span>
+            </div>
+            <div class="range">
+                <div id="range__two"></div>
+                <span class="range__span">SHORTS</span>
+            </div>
+        </div>
+        <div class="range__flex">
+            <div class="range">
+                <div id="range__three"></div>
+                <span class="range__span">CORTA-VENTO</span>
+            </div>
+            <div class="range">
+                <div id="range__four"></div>
+                <span class="range__span">CAMISAS</span>
+            </div>
+        </div>
+        <div class="range__flex">
+            <div class="range">
+                <div id="range__five"></div>
+                <span class="range__span">CALÇAS</span>
+            </div>
+            <div class="range">
+                <div id="range__six"></div>
+                <span class="range__span">CAMISETAS</span>
+            </div>
+        </div>
+    </article>
+
+    <article id="for__instagram">
+        <div id="produtors__conteiner">
+            <img src="img/left_tiengular.png" alt="" class="productors__left">
+            <span class="productors__text" id="margin__for__insta">GALERIA DO INSTAGRAM</span>
+            <img src="img/right_tiengular.png" alt="" class="productors__right">
+        </div>
+    </article>
+
+    <article id="galeria__instagram">
+        <div class="img__opacity" id="insta__one"></div>
+        <div id="insta"></div>
+        <div class="img__opacity" id="insta__two"></div>
+        <div id="insta__three"></div>
+        <div id="insta__four">
+            <div id="insta__likes"><span id="heart">&#10084;</span><span id="likes">1.323 likes</span></div>
+        </div>
+        <div id="insta__five"></div>
+        <div id="insta__six"></div>
+    </article>
+
+    <article id="for__quem">
+        <div class="produtors__conteiner">
+            <img src="img/left_tiengular.png" alt="" class="productors__left">
+            <span class="productors__text" id="margin__for__quem">QUEM USA</span>
+            <img src="img/right_tiengular.png" alt="" class="productors__right">
+        </div>
+    </article>
+
+    <article id="quem">
+        <div class="img__opacity" id="quem__one"></div>
+        <div id="quem__mid"></div>
+        <div class="img__opacity" id="quem__two"></div>
+        <div id="quem__three">
+            <div id="author"><span id="name">David Guetta</span></div>
+        </div>
+        <div id="quem__four"></div>
+        <div id="quem__five"></div>
+    </article>
+
+
+</section>
+<footer id="footer">
+    <article id="buttons">
+        <div id="buttons__article">
+            <button id="newsletter" class="footer__buttons">NEWSLETTER</button>
+            <button id="nome" class="footer__buttons">NOME</button>
+            <button id="email__button" class="footer__buttons">ENDEREÇO DE EMAIL</button>
+            <button id="cadastar" class="footer__buttons">CADASTRAR</button>
+        </div>
+    </article>
+    <article id="enext">
+        <img src="img/enex.png" alt="">
+    </article>
+    <article id="footer__tablet">
+        <div id="footer__links">
+            <div><a href="">SOBRE</a></div>
+            <div><a href="">CONTATO</a></div>
+            <div><a href="">TERMOS & CONDIÇÕES</a></div>
+            <div><a href="">POLÍTICA DE PRIVACIDADE</a></div>
+        </div>
+        <div id="footer__social">
+            <a><img src="img/facebook-footer.png" alt=""></a>
+            <a><img src="img/twittwer-footer.png" alt=""></a>
+            <a><img src="img/insta-footer.png" alt=""></a>
+        </div>
+    </article>
+</footer>
+</body>
+</html>

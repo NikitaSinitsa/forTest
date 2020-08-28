@@ -1,0 +1,195 @@
+#carrinho__hidden {
+    background-color: white;
+    position: absolute;
+    border: 1px solid black;
+    z-index: 30;
+    width: 600px;
+    height: 658px;
+    margin-top: -45px;
+    display: none;
+    right: 0;
+}
+
+#carrinho__header {
+    background-color: black;
+    color: white;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    font: 22px Rajdhani-Medium;
+}
+
+#carrinho__header span {
+    text-indent: 20px;
+}
+
+#carrinho__in {
+    margin: 0 160px 0 0;
+}
+
+#carrinho__icon__in__num {
+    position: absolute;
+    margin: -34px 0 0 -7px;
+}
+
+#number_of__in_items {
+    position: absolute;
+    margin: -31px 0 0 -3px;
+    font: 14px Rajdhani;
+    color: black;
+}
+
+#carrinho__products {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.carrinho__product {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 118px;
+    width: 600px;
+    align-items: center;
+    border-bottom: 1px solid rgb(198 198 198);
+}
+
+.carrinho__descr {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 118px;
+    width: 364px;
+    margin-right: 160px;
+}
+
+.number__price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.close {
+    border: 2px solid;
+    text-align: center;
+    width: 30px;
+}
+
+.product__name {
+    display: flex;
+    justify-content: space-between;
+    font: 24px Rajdhani-SemiBold;
+}
+
+.color {
+    width: 30px;
+    height: 30px;
+    background-color: black;
+}
+
+.number__price {
+    font: 24px Rajdhani-Regular;
+}
+
+.number {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 120px;
+}
+
+.price {
+    color: rgb(41 41 41);
+}
+
+.number input {
+    width: 40px;
+    text-align: center;
+    background-color: rgb(209 209 209);
+    border: none;
+    font: 24px Rajdhani-Regular;
+    color: rgb(41 41 41);
+}
+
+.mines, .plus {
+    width: 32px;
+    border: 1px solid;
+    text-align: center;
+}
+
+.carrinho__image {
+    background-image: url("../img/carricho.png");
+    height: 118px;
+    width: 65px;
+}
+
+#total {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+}
+
+#total__indent {
+    text-indent: 20px;
+    font: 24px Rajdhani-SemiBold;
+    color: rgb(41 41 41);
+}
+
+#total__price {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    height: 50px;
+    align-items: center;
+    background-color: rgb(220 220 220);
+}
+
+#total__color {
+    color: rgb(41 41 41);
+    font: 24px Rajdhani-Regular;
+}
+
+#checkout__continuar {
+    display: flex;
+    justify-content: space-between;
+}
+
+#continuar {
+    width: 230px;
+    height: 86px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+#continuar span {
+    font: 25px Rajdhani;
+}
+
+#checkout {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 369px;
+    text-indent: 19px;
+}
+
+#total_margin2 {
+    margin-right: 160px;
+    color: white;
+    font: 30px Rajdhani;
+}
+
+#total_margin1 {
+    color: white;
+    margin-right: 10px;
+    font: 30px Rajdhani;
+}
+
+.total_margin {
+    margin-right: 160px;
+}

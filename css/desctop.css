@@ -1,0 +1,871 @@
+@media screen and (min-width: 769px) and (max-width: 1600px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    @font-face {
+        font-family: "Rajdhani";
+        src: url(../fonts/Rajdhani-Bold.ttf);
+    }
+
+    @font-face {
+        font-family: "Rajdhani-Medium";
+        src: url(../fonts/Rajdhani-Medium.ttf);
+    }
+
+    @font-face {
+        font-family: "Rajdhani-Regular";
+        src: url(../fonts/Rajdhani-Regular.ttf);
+    }
+    @font-face {
+        font-family: "Rajdhani-SemiBold";
+        src: url(../fonts/Rajdhani-SemiBold.ttf);
+    }
+    @font-face {
+        font-family: "Courier New";
+        src: url(../fonts/cour.ttf);
+    }
+
+    #header_all {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #header {
+        background-color: black;
+        width: 100%;
+        height: 45px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #menu {
+        height: 35px;
+        width: 30px;
+        margin: 0 73px 0 10px;
+        display: flex;
+    }
+
+    #menu img {
+        display: block;
+    }
+
+    #logo {
+        font: 30px "Rajdhani";
+        color: rgb(255, 255, 255);
+        text-align: center;
+        width: 225px;
+        height: 33px;
+        display: inline-block;
+        text-decoration: none;
+        margin: 0 104px;
+    }
+
+    #login__carrinho {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 120px;
+    }
+
+    #login a {
+        font: 24px "Rajdhani-Medium";
+        color: white;
+        text-decoration: none;
+    }
+
+    #carrinho {
+        display: inline-block;
+        float: right;
+        margin: 0 10px 0 0;
+    }
+
+    #carrinho__icon__num {
+        position: absolute;
+        margin: -31px 0 0 -7px;
+    }
+
+    #number_of_items {
+        position: absolute;
+        margin: -28px 0 0 -3px;
+        font: 14px Rajdhani;
+    }
+
+    #menu__hidden {
+        background-color: white;
+        position: absolute;
+        border: 1px solid black;
+        z-index: 30;
+        width: 600px;
+        height: 658px;
+        margin-top: -45px;
+        display: none;
+    }
+
+    #menu__span {
+        background-color: black;
+        color: white;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #menu__span span {
+        margin-left: 160px;
+        font: 22px Rajdhani-Medium;
+    }
+
+    #menu__span div {
+        width: 45px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font: 22px Rajdhani-Medium;
+    }
+
+    #menu__search {
+        height: 60px;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        background-color: rgb(177 177 177);
+    }
+
+    #menu__search input {
+        height: 45px;
+        width: 390px;
+        margin: 0 0 0 148px;
+        font: 18px Rajdhani-Medium;
+        border: none;
+        text-indent: 14px;
+    }
+
+    #menu__search button {
+        border: none;
+        height: 45px;
+        width: 45px;
+    }
+
+    #menu__search button img {
+        height: 45px;
+        width: 45px;
+    }
+
+    .menu__section {
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid rgb(177 177 177);
+        font: 19px Rajdhani-Medium;
+    }
+
+    .menu__section--inner {
+        margin-left: 160px;
+    }
+
+    #menu__list {
+        overflow: scroll;
+        height: 554px;
+    }
+
+    .subbutton {
+        height: 40px;
+        width: 45px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+    }
+
+    #subbuttonMines {
+        display: none;
+    }
+
+    #submenu {
+        display: none;
+    }
+
+    .submenu__section {
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid rgb(177 177 177);
+        background-color: black;
+        color: white;
+    }
+
+    .sub__categoria {
+        font: 19px Rajdhani-Medium;
+        margin-left: 160px;
+    }
+
+    .submenu__section--direction {
+        width: 45px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu__section--social {
+        height: 40px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: 259px;
+    }
+
+    .menu__section--social a {
+        width: 34px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+    }
+
+    #overlay {
+        width: 1600px;
+        height: 3607px;
+        position: absolute;
+        background-color: white;
+        opacity: 0.5;
+        z-index: 20;
+        display: none;
+    }
+
+    #overlay2 {
+        width: 1600px;
+        height: 3607px;
+        position: absolute;
+        background-color: white;
+        opacity: 0.5;
+        z-index: 20;
+        display: none;
+    }
+
+    #beneficios {
+        background-color: rgb(197 197 197);
+        font: 12px "Rajdhani-Medium";
+        color: white;
+        text-align: center;
+        height: 15px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #text_beneficios {
+        width: 1240px;
+    }
+
+    .top__radio {
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        border: 1px solid black;
+        background-color: unset;
+    }
+
+    #image__slider {
+        background-image: url("../img/slider__pc.png");
+        height: 706px;
+    }
+
+    #slider {
+        height: 706px;
+    }
+
+    #text_in_slider {
+        position: absolute;
+        text-align: center;
+        margin: -430px 0 0 250px;
+        font-family: Rajdhani-Medium;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #CF {
+        font-size: 38px;
+    }
+
+    #sport {
+        font-family: "Courier New";
+        font-size: 25px;
+        letter-spacing: 1px;
+        line-height: 51px;
+    }
+
+    #line_under_c {
+        border: 0.5px solid black;
+        width: 320px;
+    }
+
+    #text_in_slider input {
+        font-size: 22px;
+        display: block;
+        margin: 10px 0 0 -30px;
+        width: 121px;
+        height: 35px;
+        border: solid 2px;
+        background-color: rgb(248 247 243);
+    }
+
+    #slider__buttons {
+        text-align: center;
+        margin: -35px 0 0 0;
+    }
+
+    input[type="radio"] {
+        display: none;
+    }
+
+    .white {
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        border: 1px solid rgb(154 153 151);
+        background-color: white;
+    }
+
+    input[type="radio"]:checked + label {
+        background-color: black;
+    }
+
+    .produtors {
+        height: 40px;
+        text-align: center;
+    }
+
+    .produtors__conteiner {
+        margin: 26px 0;
+    }
+
+    .productors__left {
+        opacity: 0.2;
+        width: 68px;
+        height: 17px;
+    }
+
+    .productors__text {
+        font: 26px "Rajdhani-Regular";
+    }
+
+    .productors__right {
+        opacity: 0.2;
+        width: 68px;
+        height: 17px;
+    }
+
+    .img__opacity, .img__opacity1 {
+        display: none;
+    }
+
+    #carusel {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+        display: none;
+    }
+
+    #carusel__pc {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 20px;
+        width: 1215px;
+        margin-left: 193px;
+    }
+
+    #carusel-pc_one {
+        background-image: url("../img/carusel_1-pc.png");
+        height: 333px;
+        width: 186px;
+    }
+
+    #carusel-pc2 {
+        background-image: url("../img/carusel_2-pc.png");
+        height: 333px;
+        width: 186px;
+    }
+
+    #front {
+        background-image: url("../img/carusel_3-pc.png");
+        height: 333px;
+        width: 186px;
+        z-index: 10;
+    }
+
+    #front:hover {
+        opacity: 0;
+        transition: 2s;
+    }
+
+    #front:not(:hover) {
+        transition: 1s linear;
+    }
+
+    #right {
+        background-image: url("../img/carusel_3-pc--bot.png");
+        height: 333px;
+        width: 186px;
+        z-index: 5;
+        /*display: none;*/
+    }
+
+    #right:hover {
+        opacity: 0;
+        transition: 2s;
+        transition-delay: 3s;
+    }
+
+    #right:not(:hover) {
+        transition: 1s linear;
+    }
+
+    #back {
+        background-image: url("../img/carusel_3-pc--back.png");
+        height: 333px;
+        width: 186px;
+        z-index: 1;
+        /*display: none;*/
+    }
+
+    #carusel-pc4 {
+        background-image: url("../img/carusel_4-pc.png");
+        height: 333px;
+        width: 186px;
+    }
+
+    #carusel-pc5 {
+        background-image: url("../img/carusel_5-pc.png");
+        height: 333px;
+        width: 186px;
+    }
+
+    #carusel-pc6 {
+        background-image: url("../img/carusel_6-pc.png");
+        height: 333px;
+        width: 186px;
+    }
+
+    .sale {
+        height: 290px;
+        margin: -14px 0 0 0;
+    }
+
+    #arrows {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 1280px;
+        margin-left: 160px;
+    }
+
+    .arrow__shadow {
+        width: 40px;
+        height: 333px;
+        margin-top: -333px;
+        opacity: 0.2;
+        text-align: center;
+    }
+
+    .arrow__shadow2 {
+        width: 40px;
+        height: 333px;
+        margin-top: -333px;
+        opacity: 0.2;
+        text-align: center;
+    }
+
+    .arrow__shadow img, .arrow__shadow2 img {
+        margin-top: 129px;
+    }
+
+    #old__price--section {
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        width: 1200px;
+        margin-left: 200px;
+        margin-top: 10px;
+    }
+
+    #new__price--section {
+        display: none;
+    }
+
+    .old__price {
+        font: 17px Rajdhani-SemiBold;
+        display: inline-block;
+    }
+
+    .new__price {
+        font: 18px Rajdhani-SemiBold;
+        display: inline-block;
+        margin: 0 44px 0 47px;
+    }
+
+    #old__price--one {
+        color: black;
+    }
+
+    #new__price--one {
+        margin: 0 42px 0 86px;
+    }
+
+    #old__price--three {
+        color: black;
+    }
+
+    #icon {
+        text-align: center;
+        margin: 15px 0 40px 0;
+    }
+
+    #icon img {
+        height: 50px;
+        width: 180px;
+    }
+
+    .range {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #range {
+        width: 1280px;
+        margin-left: 160px;
+    }
+
+    .range__flex {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 15px;
+    }
+
+    #range__one {
+        background-image: url("../img/range_one-tablet.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 602px;
+        height: 444px;
+    }
+
+    #range__one:hover {
+        filter: brightness(20%);
+        transition: 0.5s;
+    }
+
+    #range__one:not(:hover) {
+        transition: 1s linear;
+    }
+
+    #range__two {
+        background-image: url("../img/range_two-tablet.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 601px;
+        height: 444px;
+    }
+
+    #range__three {
+        background-image: url("../img/range_tree-tablet.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 780px;
+        height: 444px;
+    }
+
+    #range__four {
+        background-image: url("../img/range_four-tablet.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 420px;
+        height: 444px;
+    }
+
+    #range__five {
+        background-image: url("../img/range_five-tablet.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 446px;
+        height: 444px;
+    }
+
+    #range__six {
+        background-image: url("../img/range_six-tablet.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 757px;
+        height: 444px;
+    }
+
+    .range__span {
+        position: absolute;
+        font: 37px Rajdhani-SemiBold;
+        color: white;
+        text-shadow: 0 3px 0 black;
+    }
+
+    #for__instagram {
+        text-align: center;
+        margin: 60px 0 33px 0;
+    }
+
+    #margin__for__insta {
+        margin: 0 10px;
+    }
+
+    #galeria__instagram, #quem {
+        display: flex;
+        justify-content: space-around;
+        width: 1280px;
+        margin-left: 160px;
+    }
+
+    #insta {
+        background-image: url("../img/insta__one-pc.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 227px;
+        width: 226px;
+    }
+
+    #insta__three {
+        background-image: url("../img/insta__two-pc.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 227px;
+        width: 226px;
+    }
+
+    #insta__four {
+        height: 227px;
+        width: 226px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url("../img/insta__three-pc.png");
+    }
+
+    #insta__five {
+        background-image: url("../img/insta__four-pc.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 227px;
+        width: 226px;
+    }
+
+    #insta__six {
+        background-image: url("../img/insta__five-pc.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 227px;
+        width: 226px;
+    }
+
+    #insta__one, #insta__two {
+        height: 133px;
+    }
+
+    #insta__likes {
+        background-color: rgba(0 0 0 0.5);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 227px;
+        color: white;
+        font: 27px Rajdhani-SemiBold;
+        opacity: 0;
+    }
+
+    #insta__likes:hover {
+        background-color: rgba(0, 0, 0, 0.7);
+        opacity: 1;
+        transition: 0.5s;
+    }
+
+    #insta__likes:not(:hover) {
+        transition: 1s linear;
+    }
+
+    #heart {
+        font-size: 40px;
+    }
+
+    #quem__one, #quem__two {
+        height: 169px;
+    }
+
+    #margin__for__quem {
+        margin: 0 20px;
+    }
+
+    #for__quem {
+        text-align: center;
+    }
+
+    #quem__mid {
+        background-image: url("../img/quem__one-pc.png");
+        height: 285px;
+        width: 284px;
+    }
+
+    #quem__three {
+        background-image: url("../img/quem__two-pc.png");
+        height: 285px;
+        width: 284px;
+    }
+
+    #author {
+        background-color: rgba(0 0 0 0.5);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 285px;
+        color: white;
+        font: 27px Rajdhani-SemiBold;
+        opacity: 0;
+    }
+
+    #author:hover {
+        background-color: rgba(0, 0, 0, 0.7);
+        opacity: 1;
+        transition: 1s linear;
+    }
+
+    #author:not(:hover) {
+        transition: 1s linear;
+    }
+
+    #quem__four {
+        background-image: url("../img/quem__three-pc.png");
+        height: 285px;
+        width: 284px;
+    }
+
+    #quem__five {
+        background-image: url("../img/quem__four-pc.png");
+        height: 285px;
+        width: 284px;
+    }
+
+    #buttons {
+        width: 1280px;
+        margin: 55px 0 45px 160px;
+    }
+
+    #buttons__article {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #newsletter {
+        color: white;
+        background: url("../img/button2.png") 0 no-repeat;
+        width: 225px;
+        height: 50px;
+        border: none;
+        font: 21px Rajdhani-SemiBold;
+    }
+
+    #nome {
+        width: 370px;
+        height: 50px;
+        font: 21px Rajdhani-SemiBold;
+    }
+
+    #email__button {
+        width: 370px;
+        height: 50px;
+        font: 21px Rajdhani-SemiBold;
+    }
+
+    #cadastar {
+        width: 217px;
+        height: 50px;
+        font: 21px Rajdhani-SemiBold;
+        background-color: rgb(208 208 208);
+        color: white;
+        box-shadow: 0 4px 0 rgb(79 80 82);
+    }
+
+    .footer__buttons {
+        font: 22px Rajdhani-Regular;
+        color: black;
+        background-color: white;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+        border: 1px solid rgb(208 208 208);
+    }
+
+    #footer__tablet {
+        font: 17px Rajdhani-Regular;
+        height: 37px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: black;
+    }
+
+    #footer__links {
+        width: 515px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        margin-left: 160px;
+    }
+
+    #footer__links div a {
+        color: white;
+        text-decoration: none;
+    }
+
+    #footer__social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 95px;
+        margin-right: 160px;
+    }
+
+    #footer__social img {
+        width: 30px;
+        margin-right: 7px;
+    }
+
+    #enext {
+        text-align: center;
+        background-color: rgb(241 241 241);
+        height: 40px;
+        display: none;
+    }
+
+    #enext img {
+        margin-top: 5px;
+    }
+}

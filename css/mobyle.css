@@ -1,0 +1,420 @@
+@media screen and (max-width: 320px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    @font-face {
+        font-family: "Rajdhani";
+        src: url(../fonts/Rajdhani-Bold.ttf);
+    }
+
+    @font-face {
+        font-family: "Rajdhani-Medium";
+        src: url(../fonts/Rajdhani-Medium.ttf);
+    }
+
+    @font-face {
+        font-family: "Rajdhani-Regular";
+        src: url(../fonts/Rajdhani-Regular.ttf);
+    }
+    @font-face {
+        font-family: "Rajdhani-SemiBold";
+        src: url(../fonts/Rajdhani-SemiBold.ttf);
+    }
+    @font-face {
+        font-family: "Courier New";
+        src: url(../fonts/cour.ttf);
+    }
+
+    #header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: black;
+        width: 100%;
+        height: 50px;
+    }
+
+    #menu {
+        height: 30px;
+        width: 30px;
+        margin: 10px 0 10px 10px;
+    }
+
+    #menu img {
+        width: 30px;
+        height: 30px;
+    }
+
+    #logo {
+        font: 30px "Rajdhani";
+        color: rgb(255, 255, 255);
+        text-align: center;
+        width: 219px;
+        height: 37px;
+        text-decoration: none;
+    }
+
+    #login {
+        display: none;
+    }
+
+    #carrinho {
+        display: inline-block;
+        float: right;
+        margin: 0 7px 0 0;
+    }
+
+    #carrinho__icon__num {
+        position: absolute;
+        margin: -30px 0 0 -8px;
+        z-index: 1;
+    }
+
+    #number_of_items {
+        position: absolute;
+        z-index: 2;
+        margin: -28px 0 0 -4.5px;
+        font: 14px Rajdhani;
+    }
+
+    #beneficios {
+        background-color: rgb(197 197 197);
+        font: 14px "Rajdhani-Medium";
+        color: white;
+        text-align: center;
+        height: 20px;
+    }
+
+    #image__slider {
+        background-image: url("../img/Layer41.jpg");
+        height: 195px;
+    }
+
+    #slider {
+        height: 195px;
+    }
+
+    #text_in_slider {
+        position: absolute;
+        text-align: center;
+        margin: -148px 0 0 12px;
+        font-family: Rajdhani-Medium;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #CF {
+        font-size: 15px;
+    }
+
+    #line_under_c {
+        border: 0.5px solid black;
+        width: 130px;
+    }
+
+    #sport {
+        font-family: "Courier New";
+        font-size: 10px;
+        letter-spacing: 1px;
+        line-height: 19px;
+    }
+
+    #text_in_slider input {
+        display: block;
+        margin: 10px 0 0 -5px;
+        width: 75px;
+        height: 20px;
+        border: solid 2px;
+        font-size: 12px;
+        background-color: rgb(248 247 243);
+    }
+
+    #slider__buttons {
+        text-align: center;
+        margin: -35px 0 0 0;
+    }
+
+    input[type="radio"] {
+        display: none;
+    }
+
+    .white {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border: 1px solid rgb(154 153 151);
+        background-color: white;
+    }
+
+    input[type="radio"]:checked + label {
+        background-color: black;
+    }
+
+    .produtors {
+        height: 30px;
+        text-align: center;
+    }
+
+    .produtors__conteiner {
+        margin: 26px 0;
+    }
+
+    .productors__left {
+        opacity: 0.3;
+        width: 50px;
+        height: 11px;
+    }
+
+    .productors__text {
+        font: 17px "Rajdhani-Regular";
+    }
+
+    .productors__right {
+        opacity: 0.3;
+        width: 50px;
+        height: 11px;
+    }
+
+    .img__opacity {
+        opacity: 0.4;
+        height: 278px;
+    }
+
+    #noDisplayinMobyle, #noDisplayinMobyle__one, #noDisplayinMobyle__two, #noDisplayinMobyle__three,
+    #noDisplayinMobyle__four, #noDisplayinMobyle__five, #arrows, #old__price--four, #new__price--four,
+    #menu__hidden, #quem__three, #insta__three, #insta__four, #insta__five, #insta__six, #quem__four, #quem__five,
+    #footer__tablet, #old__price--five, #old__price--six, #carrinho__hidden, #insta__likes, #author {
+        display: none !important;
+    }
+
+    #old__price--section, #new__price--section {
+        text-align: center;
+    }
+
+    .old__price, .new__price {
+        display: inline-block;
+        font-family: Rajdhani-SemiBold;
+    }
+
+    .old__price {
+        font: 17px Rajdhani-SemiBold;
+        color: rgb(136 136 136);
+    }
+
+    .new__price {
+        font: 18px Rajdhani-SemiBold;
+
+    }
+
+    #old__price--one, #old__price--three, #new__price--one, #new__price--three {
+        position: absolute;
+    }
+
+    #old__price--two, #old__price--four {
+        text-decoration: line-through;
+    }
+
+    #old__price--one {
+        left: -38px;
+    }
+
+    #new__price--one {
+        left: -47px;
+        color: rgb(127 127 127);
+    }
+
+    #old__price--three {
+        right: 0;
+        width: 28px;
+        overflow: hidden;
+        text-overflow: clip;
+    }
+
+    #new__price--three {
+        right: 0;
+        overflow: hidden;
+        text-overflow: clip;
+        width: 12%;
+        color: rgb(127 127 127);
+        white-space: nowrap;
+    }
+
+    #icon {
+        text-align: center;
+        margin: 35px 0;
+    }
+
+    .range, #range {
+        text-align: center;
+        display: flex;
+        width: 294px;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 0 13px 9px;
+        align-items: center;
+    }
+
+    #range__one {
+        background-image: url("../img/range_one.png");
+        width: 290px;
+        height: 215px;
+    }
+
+    #range__two {
+        background-image: url("../img/range_two.png");
+        width: 285px;
+        height: 214px;
+    }
+
+    #range__three {
+        background-image: url("../img/range_tree.png");
+        width: 292px;
+        height: 166px;
+    }
+
+    #range__four {
+        background-image: url("../img/range_four.png");
+        width: 292px;
+        height: 311px;
+    }
+
+    #range__five {
+        background-image: url("../img/range_five.png");
+        width: 294px;
+        height: 292px;
+    }
+
+    #range__six {
+        background-image: url("../img/range_six.png");
+        width: 292px;
+        height: 174px;
+    }
+
+    .range__span {
+        position: absolute;
+        font: 22px Rajdhani-SemiBold;
+        color: white;
+        text-shadow: 0 3px 0 black;
+    }
+
+    #for__instagram {
+        text-align: center;
+        margin: 0 0 30px 0;
+    }
+
+    #margin__for__insta {
+        margin: 0 10px;
+    }
+
+    #galeria__instagram, #quem {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #insta__one {
+        background-image: url("../img/insta__one.png");
+        height: 133px;
+        width: 75px;
+    }
+
+    #insta {
+        background-image: url("../img/insta__two.png");
+        height: 133px;
+        width: 133px;
+    }
+
+    #insta__two {
+        height: 133px;
+        width: 81px;
+        background-image: url("../img/insta__three.png");
+    }
+
+    #insta__one, #insta__two {
+        height: 133px;
+    }
+
+    #quem__one, #quem__two {
+        height: 169px;
+    }
+
+    #margin__for__quem {
+        margin: 0 20px;
+    }
+
+    #for__quem {
+        text-align: center;
+    }
+
+    #quem__one {
+        background-image: url("../img/quem__one.png");
+        height: 169px;
+        width: 55px;
+    }
+
+    #quem__mid {
+        background-image: url("../img/quem__two.png");
+        height: 169px;
+        width: 168px;
+    }
+
+    #quem__two {
+        background-image: url("../img/quem__three.png");
+        height: 169px;
+        width: 57px;
+    }
+
+    #buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 55px 0 45px 0;
+    }
+
+    #buttons__article {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #newsletter {
+        color: white;
+        background-color: black;
+        border: none;
+        border-bottom: 1px solid rgb(208 208 208);
+    }
+
+    #cadastar {
+        background-color: rgb(208 208 208);
+        color: white;
+        box-shadow: 0px 4px 0 rgb(79 80 82);
+    }
+
+    .footer__buttons {
+        font: 22px Rajdhani-Regular;
+        color: black;
+        background-color: white;
+        letter-spacing: 2px;
+        width: 292px;
+        height: 52px;
+        margin-bottom: 10px;
+        border: 1px solid rgb(208 208 208);
+    }
+
+    #enext {
+        text-align: center;
+        background-color: rgb(241 241 241);
+        height: 40px;
+    }
+
+    #enext img {
+        margin-top: 5px;
+    }
+}
+
+
+
+
+
